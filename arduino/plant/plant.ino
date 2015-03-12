@@ -5,7 +5,7 @@
  * Simple program using a soil moisture sensor.
  * 
  */
-int senor_pin = 2;        // sensor pin
+int sensor_pin = 2;        // sensor pin
 int green_led = 8;        // green led
 int red_led = 7;          // red led
 
