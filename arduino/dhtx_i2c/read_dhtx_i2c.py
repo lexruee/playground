@@ -3,7 +3,7 @@
 @date       14.03.2015
 
 This program (I2C master) reads temperature and humidity data
-from an arduino (I2C slave) which is connected to a DHT22 sesnor.
+from an arduino (I2C slave) which is connected to a DHT22 sensor.
 """
 
 import smbus
