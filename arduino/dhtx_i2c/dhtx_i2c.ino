@@ -10,6 +10,8 @@
  * - 0XA0 : sends a word on the I2C bus whose data contains the measured humidity value.
  * - 0XB0 : sends a word on the I2C bus whose data contains the measured temperature value. 
  *
+ *
+ * Dependency: https://github.com/adafruit/DHT-sensor-library
  */
 
  
