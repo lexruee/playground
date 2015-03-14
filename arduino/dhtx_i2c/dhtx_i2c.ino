@@ -64,10 +64,9 @@ void receiveData(int byteCount){
   
   if(state){
       digitalWrite(13, HIGH);
-    }  else {
+    } else {
      digitalWrite(13, LOW); 
   }
-
 }
 
 void sendTemperatureWord() {
@@ -87,7 +86,7 @@ void sendHumidityWord() {
 }
 
 void sendData(){
-  if(state == 0xA0){
+  if(state == 0xA0) {
    sendHumidityWord();
   }
   
