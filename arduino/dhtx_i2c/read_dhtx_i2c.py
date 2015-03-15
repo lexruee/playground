@@ -16,7 +16,7 @@ def word2data(word):
     """
     # I2C kernel functions assume little endian
     # but arm uses big endian.
-    # Therefore we need to read a stream of bytes on the reverse order.
+    # Therefore we need to read a stream of bytes in the reverse order.
     msb = word & 0x00FF # extract msb byte
     lsb = word & 0xFF00 # extract lsb byte
     lsb = lsb >> 8      # eliminate lower bits
