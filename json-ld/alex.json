@@ -1,5 +1,6 @@
 {
   "@context" : "http://schema.org",
+  "@type": "Person",
 
   "name" : "Alexader Rüedlinger",
   "additionalName": "Alex",
