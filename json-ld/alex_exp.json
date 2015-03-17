@@ -1,0 +1,62 @@
+[
+  {
+    "http://schema.org/affiliation": [
+      {
+        "@value": "University of Fribourg"
+      }
+    ], 
+    "http://schema.org/address": [
+      {
+        "http://schema.org/streetAddress": [
+          {
+            "@value": "Schanzeneckstrasse 1"
+          }
+        ], 
+        "http://schema.org/addressRegion": [
+          {
+            "@value": "Bern"
+          }
+        ], 
+        "http://schema.org/postalCode": [
+          {
+            "@value": "3001"
+          }
+        ]
+      }
+    ], 
+    "http://schema.org/email": [
+      {
+        "@value": "a.rueedlinger@gmail.com"
+      }
+    ], 
+    "http://schema.org/name": [
+      {
+        "@value": "Alexader R\u00fcedlinger"
+      }
+    ], 
+    "http://schema.org/additionalName": [
+      {
+        "@value": "Alex"
+      }
+    ], 
+    "http://schema.org/jobTitle": [
+      {
+        "@value": "Student"
+      }
+    ], 
+    "http://schema.org/birthDate": [
+      {
+        "@type": "http://schema.org/Date", 
+        "@value": "1988-01-14"
+      }
+    ], 
+    "@type": [
+      "http://schema.org/Person"
+    ], 
+    "http://schema.org/url": [
+      {
+        "@id": "http://lexruee.ch"
+      }
+    ]
+  }
+]
