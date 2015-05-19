@@ -1,0 +1,29 @@
+#define E1 10  // Enable Pin for motor 1
+
+#define I1 8  // Control pin 1 for motor 1
+
+void setup() {
+    pinMode(E1, OUTPUT);
+
+    pinMode(I1, OUTPUT);
+}
+
+void loop() {
+
+    analogWrite(E1, 130);  // Run in half speed
+
+    digitalWrite(I1, HIGH);
+
+    delay(5000);
+
+    analogWrite(E1, 160);
+    delay(5000);
+
+    // change direction
+    //digitalWrite(E1, LOW);
+
+    //digitalWrite(E1, 130);  // Run in full speed
+
+    //digitalWrite(I1, LOW);
+    //delay(5000);
+}

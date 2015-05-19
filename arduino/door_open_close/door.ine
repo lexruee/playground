@@ -1,0 +1,29 @@
+#include <Servo.h>
+Servo servoMain; // Define our Servo
+
+int servoPin = 10;
+int led = 13;
+
+Servo servo;
+
+
+void setup()
+{
+   servoMain.attach(servoPin); // servo on digital pin 10
+  pinMode(led, OUTPUT);
+}
+
+int once = 1;
+void loop() {
+   if(once) {
+     digitalWrite(led, HIGH);
+     servoMain.write(80);
+     once = 0;
+   } else {
+    servoMain.write(110);
+    digitalWrite(led, LOW);
+    once = 1;
+   }
+
+   delay(1000);
+}

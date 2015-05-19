@@ -3,32 +3,28 @@
  * @author  Alexander Rüedlinger <a.rueedlinger@gmail.com>
  *
  *
- * This program simulates a simple I2C slave device. 
- * The arduino is connected to a DHT 22 sensor and responds to two different commands.
+ * Skeleton sketch for a I2C slave device.
  * 
  * Commands:
  * - 0XA0 : sends a word on the I2C bus whose data contains the measured humidity value.
  * - 0XB0 : sends a word on the I2C bus whose data contains the measured temperature value. 
  *
- *
- * Dependency: https://github.com/adafruit/DHT-sensor-library
  */
 
  
 #include <Wire.h>
-#include "DHT.h"
  
 #define SLAVE_ADDRESS 0x04
 
-#define DHT_PIN 2
-#define DHT_TYPE DHT22
-
-float humidity = 0;
-float temperature = 0;
-
-DHT dht(DHT_PIN, DHT_TYPE);
-
 uint8_t state = 0x00;
+
+/*
+ * Fake registers.
+ *
+ *
+ */
+ 
+ 
 
 void setup() {
   pinMode(13, OUTPUT);
@@ -42,6 +38,7 @@ void setup() {
 
 long c = 0;
 void loop() {
+  
   humidity = dht.readHumidity();
   temperature = dht.readTemperature();
   if(c > 100) {
